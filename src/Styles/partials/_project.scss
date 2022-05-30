@@ -1,0 +1,40 @@
+@import './data';
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:10px;
+    padding: 0;
+    height: 450px;
+    position: relative;
+    a{
+        width: 100%;
+        transition: ease-in-out 0.3s;
+        filter: blur(0.5px);
+        img{
+            width: 100%;
+            opacity: 1; 
+            height: 450px;
+            box-shadow: 0 6px 7px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            filter: grayscale(90%);
+        }
+    }
+    .view-hover{
+        display: none;
+        padding: 0;
+        transition: ease-in-out 0.3s;
+    }
+}
+
+
+@keyframes project{
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+
