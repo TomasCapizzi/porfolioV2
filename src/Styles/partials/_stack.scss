@@ -38,3 +38,66 @@
     }
 }
 
+@media (max-width: 375px){
+    .stack{
+        margin-top: 20px;
+        width: 90%;
+        border-top: 2px solid $c3;
+        border-bottom: 0px solid $c3;
+        h3{
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        .items{
+            justify-content: space-between;
+            flex-direction: column;
+            ul{
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 6px;
+                border-bottom: 1px solid $c4;
+                li{
+                    margin: 0px 5px;
+                    svg{
+                        color: $c2;
+                        font-size: 18px;
+                    }
+                    span{
+                        margin-left: 3px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media only screen and (min-width: 376px) and (max-width: 440px){
+    .stack{
+        margin-top: 30px;
+        width: 90%;
+        h3{
+            font-size: 24px;
+            margin: 0;
+            margin-top: 15px;
+        }
+        .items{
+            justify-content: flex-start;
+            ul{
+                width: 25%;
+                li{
+                    svg{
+                        color: $c2;
+                        font-size: 20px;
+                    }
+                    span{
+                        margin-left: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

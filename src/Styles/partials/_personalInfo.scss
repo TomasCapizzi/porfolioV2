@@ -35,3 +35,16 @@
     }
 }
 
+@media (max-width: 375px){
+    .personalInfo{
+        width: 90%;
+        justify-content: center;
+        p{
+            padding-left: 60px;
+            font-size: 14px;
+            span{
+                font-size: 30px;
+            }
+        }
+    } 
+}

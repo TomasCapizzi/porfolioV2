@@ -38,3 +38,100 @@
         }
     }
 }
+@media (max-width: 375px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        h3{
+            font-size: 34px;
+        }
+        p{
+            width: 80%;
+            font-size: 14px;
+        }
+    
+        .contact-icons{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            margin-bottom: 80px;
+            width: 90%;
+            padding: 0;
+            li{
+                a{
+                    color: $c2;
+                }
+                
+                font-size: 30px;
+            }
+            li:hover{
+                transition: ease-in 0.2s;
+                animation-name: icons;
+                animation-duration: 0.3s;
+            }
+            a:hover{
+                color: $c3;
+    
+            }
+        }
+    }
+}
+/*
+
+
+@media (max-width: 600px){
+    .contact{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        h3{
+            font-size: 3rem;
+            width: 100%;
+        }
+        p{
+            width: 90%;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+    
+        .contact-icons{
+            justify-content: space-around;
+            margin-bottom: 60px;
+            width: 50%;
+            li{                
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:600px) and (max-width: 1024px){
+    .contact{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        h3{
+            font-size: 3.2rem;
+            width: 100%;
+        }
+        p{
+            width: 75%;
+            font-size: 1.3rem;
+        }
+    
+        .contact-icons{
+            justify-content: space-around;
+            margin-bottom: 60px;
+            width: 50%;
+            li{                
+                font-size: 2.2rem;
+            }
+
+        }
+    }
+}*/
