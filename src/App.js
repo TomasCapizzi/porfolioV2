@@ -18,6 +18,17 @@ function App() {
   */
 
 
+  return (
+    <div className="app">
+      <LanguageContextProvider>
+        <BrowserRouter>
+          <Navbar/>
+          <Routing/>
+          <Footer/>
+        </BrowserRouter>
+      </LanguageContextProvider>
+    </div>
+  );
 }
 
 export default App;
