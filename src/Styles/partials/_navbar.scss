@@ -1,0 +1,73 @@
+@import './data';
+.menu{
+    display: flex;
+    width: 100%;
+    background-color: $c4;
+    justify-content: center;
+    .nav-container{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        width: 50%;
+        li{
+            margin-right: 40px;
+            color: $c5;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a:nth-child(1){
+            li{
+                font-size: 1.1rem;
+            }
+        }
+        li:hover{
+            color: $c3;
+            transition: ease-in 0.15s;
+        }
+        a:nth-child(1) li:hover{
+            animation-name: icons;
+            animation-duration: 0.3s;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .languages{
+        justify-content: flex-end;
+        li{
+            margin-right: 15px;
+        }
+        .englishOn{
+            color: $c5;
+        }
+        .englishOff{
+            color: $c3;
+        }
+    }
+}
+.menu-hamb{
+    display: none;
+    .hamb-links{
+        display: none;
+    }
+}
+// Animations
+@keyframes icons {
+    0%{
+        transform: rotate(0);
+    }
+    30%{
+        transform: rotate(-15deg);
+    }
+    60%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
