@@ -1,0 +1,90 @@
+@import './data';
+.description{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    animation-name: start;
+    animation-duration: 0.8s;
+    margin-top: 90px;
+    img{
+        width: 30%;
+        border-radius: 8px;
+        transition: .3s ease-in-out all;
+        filter: grayscale(50%);
+    }
+    img:hover{
+        filter: grayscale(0%); 
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        h1{
+            font-size: 28px;
+            margin: 0;
+            color: $c5;
+        }
+        h2{
+            font-size: 30px;
+            color: $c2;
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            width: 30%;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            li{
+                a{
+                    color: $c2;
+                    text-decoration: none;
+                    font-size: 35px;
+                    transition: .3s ease-in all;
+                    cursor: pointer;
+                }
+                a:hover{
+                    color: $c4;
+                }
+            }
+        }
+    }
+
+}
+//Animations
+
+@keyframes start{
+    0%{
+        opacity: 0;
+        margin-top: 15px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes svgs{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes wave {
+    0%{
+     transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
