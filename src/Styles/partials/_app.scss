@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import './data';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: $c1;
+}
+
+
+
+.app{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
