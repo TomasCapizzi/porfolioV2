@@ -1,0 +1,40 @@
+@import '../partials/data';
+.stack{
+    display: flex;
+    margin-top: 40px;
+    width: 70%;
+    flex-direction: column;
+    border-top: 3px solid $c3;
+    border-bottom: 3px solid $c3;
+    h3{
+        font-size: 25px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            li{
+                color: $c5;
+                display: flex;
+                align-items: center;
+                margin: 5px;
+                svg{
+                    color: $c2;
+                    font-size: 25px;
+                }
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
