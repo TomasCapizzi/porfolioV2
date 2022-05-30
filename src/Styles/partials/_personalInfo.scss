@@ -1,0 +1,37 @@
+@import '../partials/data';
+.personalInfo{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: $c5;
+    p{
+        display: flex;
+        position: relative;
+        padding-left: 100px;
+        span{
+            font-size: 50px;
+            animation: hello 3s infinite;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+@keyframes hello {
+    0%{
+        top: 0;
+        right: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: 40px;
+        right: 40px;
+    }
+    100%{
+        top: 0;
+        right: 0;
+        transform: rotate(0deg);
+    }
+}
+
