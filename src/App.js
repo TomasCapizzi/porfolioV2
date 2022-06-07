@@ -9,15 +9,6 @@ import Routing from './components/Routing';
 
 function App() {
 
-/*  Heroku - github integration problem. Api turned down
-  async function projectsDB(){
-    const resp = await fetch('https://projects-api-tcapizzi.herokuapp.com/api/projects/all');
-    const res = await resp.json();
-    setProjectsAPI(res);
-  }
-  */
-
-
   return (
     <div className="app">
       <LanguageContextProvider>
