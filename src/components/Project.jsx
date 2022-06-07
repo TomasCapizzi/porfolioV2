@@ -1,18 +1,25 @@
-import {FaCheckCircle} from 'react-icons/fa';
+import {FaCheckCircle, FaInfo} from 'react-icons/fa';
+import React,{useEffect} from "react";
+
+import {GrDeploy} from 'react-icons/gr';
 import {Link} from 'react-router-dom';
-import React from "react";
 
 export default function Project({item, parameter}){
     const {id} = item
     console.log(id);
+    const screenWidth = window.innerWidth
+
+    useEffect(()=>{
+        console.log(screenWidth);
+    },[])
     return (
     <>        
         {
             id <= parameter ?
             <article className='project' id={'item' + item.id}>
-                    <a href={item.route}><img src={item.img} alt="project"/></a>
+                    <a href={item.route}><img src={screenWidth>739 && item.portada? item.img : item.portada} alt="project"/></a>
                     <div className='view-hover'>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ED6C4E" fillOpacity="1" d="M0,64L720,224L1440,160L1440,320L720,320L0,320Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#404040" fillOpacity="1" d="M0,64L720,224L1440,160L1440,320L720,320L0,320Z"></path></svg>
                         <div className='view-descrip'>
                             <h5>{item.name}</h5>
                             <ul className='tech-list'>
@@ -27,8 +34,8 @@ export default function Project({item, parameter}){
                                 {item.tech.bulma && <li><FaCheckCircle/> Bulma Css</li>}
                             </ul>
                             <div className='btns'>
-                                <Link to={'/project/' + item.id}><button>Detail</button></Link>
-                                <button><a href={item.route} target='_blank' rel="noreferrer">Deploy</a></button>
+                                <Link to={'/project/' + item.id}><button><FaInfo/></button></Link>
+                                <a href={item.route} target='_blank' rel="noreferrer"><button><GrDeploy/></button></a>
                             </div>
                         </div>
                     </div>
