@@ -199,9 +199,26 @@
 
 @media only screen and (min-width: 1024px){
     .stack{
+        .list{
+            border: 3px solid transparent;
+        }
         .list:hover{
             border: 3px solid $c3;
             transform: scale(0.95);
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .stack{
+        .list{
+            ul{
+                li{
+                    p{
+                        margin: 0 0px 0 5px;
+                    }
+                }
+            }
         }
     }
 }
