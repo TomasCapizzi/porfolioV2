@@ -13,7 +13,7 @@ export const projectsList = [
             customHook: false
         },
         repo:'https://github.com/TomasCapizzi/ecommerce',
-        img: './img/responsive/ecommerce.png',
+        img: './img/responsive/craftbeer.png',
         portada: './img/portada/craftbeer.png',
         gif: '../gif/Ecommerce.gif',
         route: 'https://craft-beer-ecommerce.netlify.app/',
@@ -33,7 +33,7 @@ export const projectsList = [
             customHook: true
         },
         repo:'https://github.com/TomasCapizzi/historia-clinica',
-        img: './img/responsive/records.png',
+        img: './img/responsive/medrecords.png',
         portada: './img/portada/medrecords.png',
         gif:'../gif/records.gif',
         route: 'https://historia-clinica.vercel.app/',
@@ -75,8 +75,8 @@ export const projectsList = [
             customHook: false
         },
         repo:'https://github.com/TomasCapizzi/recipe-app',
-        img: './img/responsive/recipe.png',
-        portada: './img/portada/recipe-app.png',
+        img: './img/responsive/recipes.png',
+        portada: './img/portada/recipes.png',
         gif: '../gif/recipe-app2.gif',
         route: 'https://recipe-app-000.netlify.app/',
         descripcion: 'Este proyecto fue llevado a cabo mediante el uso de la API TheMealDB, la cual brinca una cierta cantidad de recetas y permite llevar a cabo varias acciones. En este caso hice una recetario donde podes guardar tus comidas favoritas usando LocalStorage, se puede filtrar por categorias y tambien realizar búsquedas. Las tecnologías utilizadas para realizar esto fueron:HTML - SASS - JS - REACT',
@@ -95,7 +95,7 @@ export const projectsList = [
             customHook: false
         },
         repo:'https://github.com/TomasCapizzi/auth-chat-app',
-        img: '../img/responsive/chat.png',
+        img: '../img/responsive/chat-auth.png',
         portada: '../img/portada/chat.png',
         gif: './gif/chat.gif',
         route: 'https://chat-app-auth.netlify.app/',
@@ -115,7 +115,7 @@ export const projectsList = [
             customHook: true
         },
         repo:'https://github.com/TomasCapizzi/Trivia',
-        img: './img/responsive/trivia.png',
+        img: './img/responsive/quiz.png',
         portada: '../img/portada/trivia.png',
         gif: '../gif/trivia.gif',
         route: 'https://trivia-app-project.netlify.app/',
@@ -135,7 +135,7 @@ export const projectsList = [
             customHook: true
         },
         repo:'https://github.com/TomasCapizzi/timezones',
-        img: './img/responsive/timezones.png',
+        img: './img/responsive/timezone.png',
         portada: '../img/portada/time.png',
         gif: '../gif/timezones.gif',
         route: 'https://worldtimezones.netlify.app/',
@@ -156,8 +156,8 @@ export const projectsList = [
             redux: true
         },
         repo:'https://github.com/TomasCapizzi/task-manager',
-        img: './img/responsive/taskmanager.png',
-        portada: '../img/portada/taskmanager.png',
+        img: './img/responsive/tasksmanager.png',
+        portada: '../img/portada/tasksmanager.png',
         gif: '../gif/taskmanager.gif',
         route: 'https://task-manager-brown.vercel.app/',
         descripcion: 'Task Manager es una aplicación de manejo de tareas.Este proyecto lo hice para aprender a utilizar Redux y Bulma. Las tecnologías utilizadas para realizar esto fueron:REACT-REDUX-BULMA',
@@ -177,8 +177,8 @@ export const projectsList = [
             customHook: false
         },
         repo:'https://github.com/TomasCapizzi/pokedex',
-        img: './img/responsive/pokedex.png',
-        portada: '../img/portada/pokedex.png',
+        img: './img/responsive/poke.png',
+        portada: '../img/portada/poke.png',
         gif: '../gif/pokedex.gif',
         route: 'https://tomascapizzi.github.io/pokedex/',
         descripcion: 'Este Pokedex esta hecho con la PokeApi. Podemos obtener cada pókemon, ir del id mas bajo al mas alto o viceversa, ver las características a través de un modal y tambien esta paginado. fue realizado con HTML - CSS - JS',
@@ -197,8 +197,8 @@ export const projectsList = [
             customHook: false
         },
         repo:'https://github.com/TomasCapizzi/memotest',
-        img: './img/responsive/memo.png',
-        portada: '../img/portada/memotest.png',
+        img: './img/responsive/memotest.png',
+        portada: '../img/portada/memo.png',
         gif:'../gif/memotest.gif',
         route: 'https://tomascapizzi.github.io/memotest/',
         descripcion:'Una réplica del conocido juego Memotest, el propósito del juego es encontrar el par en la menor cantidad de intentos posibles. Posee 3 tipos de dificultades. Esta hecho con HTML - CSS - JS VANILLA',
@@ -206,8 +206,8 @@ export const projectsList = [
     },{
         id:11,
         name: 'Memory Game',
-        img: './img/responsive/memorygame.png',
-        portada: '../img/portada/memory_game.png',
+        img: './img/responsive/memory.png',
+        portada: '../img/portada/memory.png',
         gif: '../gif/memorygame.gif',
         code: 'js',
         tech:{
