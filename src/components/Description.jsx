@@ -1,5 +1,5 @@
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
-import React,{useContext, useRef, useState} from 'react';
+import React,{useContext} from 'react';
 
 import { LanguageContext } from './Languagecontext/LanguageContext';
 
