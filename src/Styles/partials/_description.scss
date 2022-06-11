@@ -3,9 +3,8 @@
     display: flex;
     justify-content: space-around;
     width: 1024px;
-    animation-name: start;
-    animation-duration: 0.8s;
     margin-top: 70px;
+    animation: start 0.9s ease-in-out;
     img{
         width: 270px;
         border-radius: 8px;
@@ -60,11 +59,11 @@
 @keyframes start{
     0%{
         opacity: 0;
-        margin-top: 15px;
+        margin-bottom: -45px;
     }
     100%{
         opacity: 1;
-        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 
