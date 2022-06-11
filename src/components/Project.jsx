@@ -1,23 +1,28 @@
 import {FaCheckCircle, FaInfo} from 'react-icons/fa';
-import React,{useEffect} from "react";
+import React,{useLayoutEffect, useState} from "react";
 
 import {GrDeploy} from 'react-icons/gr';
 import {Link} from 'react-router-dom';
 
 export default function Project({item, parameter}){
     const {id} = item
-    console.log(id);
-    const screenWidth = window.innerWidth
+    const [size, setSize] = useState(0);
 
-    useEffect(()=>{
-        console.log(screenWidth);
-    },[])
+    useLayoutEffect(() => {
+        const updateSize = () => {
+          setSize(window.innerWidth);
+        };
+        window.addEventListener("resize", updateSize);
+        updateSize();
+        return () => window.removeEventListener("resize", updateSize);
+      }, []);
+
     return (
     <>        
         {
             id <= parameter ?
             <article className='project' id={'item' + item.id}>
-                    <a href={item.route}><img src={screenWidth>739 && item.portada? item.img : item.portada} alt="project"/></a>
+                    <a href={item.route}><img src={size>=740 && item.portada? item.img : item.portada} alt="project"/></a>
                     <div className='view-hover'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#404040" fillOpacity="1" d="M0,64L720,224L1440,160L1440,320L720,320L0,320Z"></path></svg>
                         <div className='view-descrip'>
