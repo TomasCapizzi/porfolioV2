@@ -41,7 +41,7 @@
     .btnProj{
         color: $c2;
         background-color: $c3;
-        cursor: pointer;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,9 +53,23 @@
             color: $c2;
             font-size: 18px;
         }
+        a{
+            width: 30px;
+            svg{
+                color: $c2;
+                cursor: pointer;
+                transition: .3s ease all;
+                font-size: 27px;
+            }
+            svg:hover{
+                color: $c4;
+            }
+
+        }
         svg{
             transition: .3s ease all;
             width: 30px;
+            cursor: pointer;
         }
         svg:hover{
             color: $c4;
@@ -109,6 +123,10 @@
             a{
                 text-decoration: none;
                 color: $c2;
+                svg{
+                    transition: .3s ease all;
+                    width: 26px;
+                }
             }
             svg{
                 transition: .3s ease all;
@@ -167,6 +185,13 @@
             a{
                 text-decoration: none;
                 color: $c2;
+                svg{
+                    transition: .3s ease all;
+                    width: 30px;
+                }
+                svg:hover{
+                    color: $c4;
+                }
             }
             svg{
                 transition: .3s ease all;
@@ -226,6 +251,13 @@
             a{
                 text-decoration: none;
                 color: $c2;
+                svg{
+                    transition: .3s ease all;
+                    width: 30px;
+                }
+                svg:hover{
+                    color: $c4;
+                }
             }
             svg{
                 transition: .3s ease all;
