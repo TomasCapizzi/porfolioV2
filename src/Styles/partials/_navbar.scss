@@ -145,19 +145,32 @@
                     color: $c2;
                 }
             }
-            div{
+            .languages{
                 display: flex;
-                justify-content: space-around;
+                flex-direction: row;
+                justify-content: space-between;
                 width: 100%;
                 background-color: $c3;
-                button{
+                li{
                     color: $c5;
                     width: 50%;
+                    list-style: none;
+                    text-align: center;
+                    cursor: pointer;
                 }
-                button:hover{
+                li:nth-child(2){
+                    display: none;
+                }
+                li:hover{
                     background-color: $c5;
                     color: $c3;
                     transition: ease-in-out 0.3s;
+                }
+                .englishOn{
+                    color: $c2;
+                }
+                .englishOff{
+                    color: $c5;
                 }
             }
         }
@@ -237,19 +250,33 @@
                     color: $c2;
                 }
             }
-            div{
+            .languages{
                 display: flex;
-                justify-content: space-around;
+                flex-direction: row;
+                justify-content: space-between;
                 width: 100%;
                 background-color: $c3;
-                button{
+                li{
                     color: $c5;
                     width: 50%;
+                    list-style: none;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 20px;
                 }
-                button:hover{
+                li:nth-child(2){
+                    display: none;
+                }
+                li:hover{
                     background-color: $c5;
                     color: $c3;
                     transition: ease-in-out 0.3s;
+                }
+                .englishOn{
+                    color: $c2;
+                }
+                .englishOff{
+                    color: $c5;
                 }
             }
         }
