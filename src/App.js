@@ -1,9 +1,9 @@
 import './Styles/main.scss';
 
 import { BrowserRouter } from 'react-router-dom';
+import Container from './components/Navbar/Container';
 import Footer from './components/Footer';
-import LanguageContextProvider from './components/Languagecontext/LanguageContext';
-import Navbar from './components/Navbar';
+import LanguageContextProvider from './context//LanguageContext';
 import React from 'react';
 import Routing from './components/Routing';
 
@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <LanguageContextProvider>
         <BrowserRouter>
-          <Navbar/>
+          <Container/>
           <Routing/>
           <Footer/>
         </BrowserRouter>
