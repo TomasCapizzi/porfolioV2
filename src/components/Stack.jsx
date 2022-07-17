@@ -1,5 +1,5 @@
 import {AiFillGithub, AiFillHtml5} from 'react-icons/ai';
-import {FaCss3Alt, FaGitAlt, FaNodeJs, FaReact, FaSass} from 'react-icons/fa';
+import {FaAws, FaCss3Alt, FaGitAlt, FaNodeJs, FaReact, FaSass} from 'react-icons/fa';
 import {IoBrush, IoCodeSlashSharp, IoSettings} from 'react-icons/io5';
 import {SiAdobeaftereffects, SiAdobeillustrator, SiAdobephotoshop, SiAdobepremiere, SiFirebase, SiJavascript, SiMongodb, SiRedux} from 'react-icons/si';
 
@@ -28,6 +28,7 @@ function Stack() {
               <li><FaGitAlt/><p>Git</p></li>
               <li><AiFillGithub/><p>Github</p></li>
               <li><SiRedux/><p>Redux</p></li>
+              <li><FaAws/><p>AWS</p></li>
             </ul>
           </div>
           <div className='list'>
