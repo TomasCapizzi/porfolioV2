@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import { LanguageContext } from './Languagecontext/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 
 function PersonalInfo() {
     const {english} = useContext(LanguageContext);
