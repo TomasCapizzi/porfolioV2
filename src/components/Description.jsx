@@ -1,7 +1,7 @@
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import React,{useContext} from 'react';
 
-import { LanguageContext } from './Languagecontext/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 
 export default function Description(){
 
