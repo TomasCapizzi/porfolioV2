@@ -1,24 +1,29 @@
 export const projectsList = [
     {
         id:1,
-        name: 'Craft-Beer',
-        code: 'react-fb',
+        name: 'Famox SA - Ecommerce',
+        code: 'react',
         tech:{
             responsive: true,
             auth: false,
-            sass: true,
-            db: true,
+            db: false,
             ls: false,
-            api: false,
-            customHook: false
+            api: true,
+            redux: false,
+            mongoDB: true,
+            customHook: true,
+            aws: true,
+            mern: true
         },
-        repo:'https://github.com/TomasCapizzi/ecommerce',
-        img: './img/responsive/craftbeer.png',
-        portada: './img/portada/craftbeer.png',
-        gif: '../gif/Ecommerce.gif',
-        route: 'https://craft-beer-ecommerce.netlify.app/',
-        descripcion: 'Este proyecto fue hecho durante el curso de Reacts Js en Coderhouse. Es un ecommerce donde una serie de productos se traen desde una base de datos de Firebase y las ordenes de compra y data del usuario son creadas en una nueva colección en Firebase. Las tecnologías utilizadas para realizar esto fueron: HTML - SASS - JS - REACT - FIREBASE ',
-        description: 'This project was done in the React JS course at CoderHouse. It is an ecommerce where a series of products are brought from a firebase database and the purchase order and user data are created in a new collection. The technologies used for this project were: HTML - SASS - JS - REACT - FIREBASE'
+        date: 'July 2022',
+        repo:'https://github.com/TomasCapizzi/Famox',
+        img: './img/responsive/famox.png',
+        portada: './img/portada/famox.png',
+        gif: '../gif/famoxPrueba2.gif',
+        route: 'http://www.famox.com.ar/',
+        descripcion: 'Ecommerce diseñado para la empresa Famox SA, con base de datos en Mongo y una api rest para el back; y para el front una app en React.',
+        description: 'Ecommerce designed for a small businnes, Famox SA. It has a mongoDB database and a rest api for the backend, and for frontend an app in React.'
+    
     },{
         id:2,
         name: 'Medical Records',
@@ -32,6 +37,7 @@ export const projectsList = [
             api: false,
             customHook: true
         },
+        date: 'December 2021',
         repo:'https://github.com/TomasCapizzi/historia-clinica',
         img: './img/responsive/medrecords.png',
         portada: './img/portada/medrecords.png',
@@ -41,26 +47,25 @@ export const projectsList = [
         description: 'This application was made to keep a register of medical records. It´s purpose is for doctors use only. They can login with Google, thanks to firebase auth. Data is stored in firestore. It´s developed with React, Sass and Firebase. I also used react-icons and react-router-dom.'
     },{
         id:3,
-        name: 'Famox SA - Ecommerce',
-        code: 'react',
+        name: 'Craft-Beer',
+        code: 'react-fb',
         tech:{
             responsive: true,
             auth: false,
+            sass: true,
             db: true,
-            ls: true,
-            api: true,
-            redux: false,
-            mongoDB: true,
-            customHook: true
+            ls: false,
+            api: false,
+            customHook: false
         },
-        repo:'https://github.com/TomasCapizzi/Famox',
-        img: './img/responsive/famox.png',
-        portada: './img/portada/famox.png',
-        gif: '../gif/famoxPrueba2.gif',
-        route: 'http://prueba.famox.com.ar/',
-        descripcion: 'Ecommerce diseñado para la empresa Famox SA, con base de datos en Mongo y una api rest para el back; y para el front una app en React.',
-        description: 'Ecommerce designed for a small businnes, Famox SA. It has a mongoDB database and a rest api for the backend, and for frontend an app in React.'
-    
+        date: 'August 2021',
+        repo:'https://github.com/TomasCapizzi/ecommerce',
+        img: './img/responsive/craftbeer.png',
+        portada: './img/portada/craftbeer.png',
+        gif: '../gif/Ecommerce.gif',
+        route: 'https://craft-beer-ecommerce.netlify.app/',
+        descripcion: 'Este proyecto fue hecho durante el curso de Reacts Js en Coderhouse. Es un ecommerce donde una serie de productos se traen desde una base de datos de Firebase y las ordenes de compra y data del usuario son creadas en una nueva colección en Firebase. Las tecnologías utilizadas para realizar esto fueron: HTML - SASS - JS - REACT - FIREBASE ',
+        description: 'This project was done in the React JS course at CoderHouse. It is an ecommerce where a series of products are brought from a firebase database and the purchase order and user data are created in a new collection. The technologies used for this project were: HTML - SASS - JS - REACT - FIREBASE'
     },{
         id:4,
         name: 'Recipe App',
@@ -74,6 +79,7 @@ export const projectsList = [
             api: true,
             customHook: false
         },
+        date: 'September 2021',
         repo:'https://github.com/TomasCapizzi/recipe-app',
         img: './img/responsive/recipes.png',
         portada: './img/portada/recipes.png',
@@ -94,6 +100,7 @@ export const projectsList = [
             api: false,
             customHook: false
         },
+        date: 'January 2022',
         repo:'https://github.com/TomasCapizzi/auth-chat-app',
         img: '../img/responsive/chat-auth.png',
         portada: '../img/portada/chat.png',
@@ -114,6 +121,7 @@ export const projectsList = [
             api: true,
             customHook: true
         },
+        date: 'October 2021',
         repo:'https://github.com/TomasCapizzi/Trivia',
         img: './img/responsive/quiz.png',
         portada: '../img/portada/trivia.png',
@@ -134,6 +142,7 @@ export const projectsList = [
             api: true,
             customHook: true
         },
+        date: 'December 2021',
         repo:'https://github.com/TomasCapizzi/timezones',
         img: './img/responsive/timezone.png',
         portada: '../img/portada/time.png',
@@ -153,8 +162,11 @@ export const projectsList = [
             db: false,
             ls: false,
             api: false,
-            redux: true
+            redux: true,
+            mern: true,
+            mongoDB: true,
         },
+        date: 'February 2022',
         repo:'https://github.com/TomasCapizzi/task-manager',
         img: './img/responsive/tasksmanager.png',
         portada: '../img/portada/tasksmanager.png',
@@ -176,6 +188,7 @@ export const projectsList = [
             api: true,
             customHook: false
         },
+        date: 'June 2021',
         repo:'https://github.com/TomasCapizzi/pokedex',
         img: './img/responsive/poke.png',
         portada: '../img/portada/poke.png',
@@ -196,6 +209,7 @@ export const projectsList = [
             api: false,
             customHook: false
         },
+        date: 'May 2021',
         repo:'https://github.com/TomasCapizzi/memotest',
         img: './img/responsive/memotest.png',
         portada: '../img/portada/memo.png',
@@ -219,6 +233,7 @@ export const projectsList = [
             api: false,
             customHook: false
         },
+        date: 'June 2021',
         repo:'https://github.com/TomasCapizzi/memory-game',
         route: 'https://tomascapizzi.github.io/memory-game/',
         descripcion: 'El juego de la memoria consiste en acordarse la ubicación de diferentes pares de imágenes y poder encontrarlas correctamente. Esta hecho con Js Vanilla.',
