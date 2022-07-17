@@ -2,7 +2,7 @@ import {AiFillGithub, AiOutlineLink} from 'react-icons/ai';
 import React, {useContext, useEffect, useState} from 'react';
 
 import {HiOutlineArrowLeft} from 'react-icons/hi'
-import { LanguageContext } from '../components/Languagecontext/LanguageContext';
+import { LanguageContext } from '../context//LanguageContext';
 import { Link } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 import {projectsList} from '../projectsList';
