@@ -4,25 +4,15 @@ import React from 'react';
 function StackProject({item}) {
   return (
     <ul className='tech-list'>
-        {
-          item.tech.mern && <li><FaCheckCircle/>MERN Project</li>
-        }
-        {
-          item.tech.aws && <li><FaCheckCircle/>AWS Deploy</li>
-        }
-        {item.tech.api && <li><FaCheckCircle/> API Rest</li>}
-        {item.tech.auth && <li><FaCheckCircle/> Auth</li>}
-        {item.tech.db && <li><FaCheckCircle/> Firestore</li>}
-        {item.tech.ls && <li><FaCheckCircle/> Local Storage</li>}
-        {item.tech.responsive && <li><FaCheckCircle/> Responsive</li>}
-        {item.tech.redux && <li><FaCheckCircle/>Redux</li>}
-        {item.tech.sass && <li><FaCheckCircle/> Sass</li>}
-        {item.tech.customHook && <li><FaCheckCircle/> Custom Hooks</li>}
-        {item.tech.bulma && <li><FaCheckCircle/> Bulma Css</li>}
-        {
-          item.tech.mongoDB && <li><FaCheckCircle/>MongoDB Atlas</li>
-        }
-
+        {item.tech_mern === 1 && <li><FaCheckCircle/>MERN Project</li>}
+        {item.tech_aws=== 1 && <li><FaCheckCircle/>AWS Deploy</li>}
+        {item.tech_api=== 1 && <li><FaCheckCircle/> API Rest</li>}
+        {item.tech_auth=== 1 && <li><FaCheckCircle/> Auth</li>}
+        {item.tech_db=== 1 && <li><FaCheckCircle/> Database</li>}
+        {item.tech_firebase=== 1 && <li><FaCheckCircle/> Firebase</li>}
+        {item.tech_responsive=== 1 && <li><FaCheckCircle/> Responsive</li>}
+        {item.tech_redux=== 1 && <li><FaCheckCircle/>Redux</li>}
+        {item.tech_mongoDB=== 1 && <li><FaCheckCircle/>MongoDB</li>}
     </ul>
   )
 }
