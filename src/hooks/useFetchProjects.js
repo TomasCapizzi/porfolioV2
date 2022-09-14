@@ -10,8 +10,6 @@ function useFetchProjects() {
       return setProjects(res.data)
     }
 
-
-   // console.log(res.data);
   return {projects, getProyects}
 }
 
