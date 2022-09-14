@@ -28,22 +28,23 @@ export default function ProjectDetail(){
     return(
         <section className='detail-container'>
             <Link to='/'><HiOutlineArrowLeft className='backpage'/></Link>
-            { handler ? <>
-                <h1>{project.name}</h1>
-            <article>
-                <div className='img-cont'>
-                    <a href={project.route} target='_blank' rel="noreferrer">{project.gif ? <img src={project.gif} alt="project"/> : <img src={project.img} alt="project" />}</a>
-                </div>
-                <div className='detail-descrip'>
-                    <p>{english? project.description : project.descripcion}</p>
-                    <div>
-                        {project.repo && <a href={project.repo} target='_blank' rel="noreferrer"><AiFillGithub id='github-icon'/></a>}
-                        <a href={project.route} target='_blank' rel="noreferrer"><AiOutlineLink/></a>
-                    </div>
+            { handler ? 
+                <>
+                    <h1>{project.name}</h1>
+                    <article>
+                        <div className='img-cont'>
+                            <a href={project.route} target='_blank' rel="noreferrer">{project.gif ? <img src={project.gif} alt="project"/> : <img src={project.img} alt="project" />}</a>
+                        </div>
+                        <div className='detail-descrip'>
+                            <p>{english? project.description : project.descripcion}</p>
+                            <div>
+                                {project.repo && <a href={project.repo} target='_blank' rel="noreferrer"><AiFillGithub id='github-icon'/></a>}
+                                <a href={project.route} target='_blank' rel="noreferrer"><AiOutlineLink/></a>
+                            </div>
 
-                </div>
-            </article>
-            </> : <Spinner/>  }
+                        </div>
+                    </article>
+                </> : <Spinner/> }
 
         </section>
     )
