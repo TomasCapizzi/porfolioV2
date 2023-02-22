@@ -5,6 +5,7 @@ import {HiOutlineArrowLeft} from 'react-icons/hi'
 import { LanguageContext } from '../context//LanguageContext';
 import { Link } from 'react-router-dom';
 import Spinner from '../components/Spinner';
+import { projectsList } from '../projectsList';
 import useFetchProjectById from '../hooks/useFetchProjectById';
 import { useParams } from 'react-router';
 
@@ -18,11 +19,12 @@ export default function ProjectDetail(){
 
     useEffect(()=>{
         //setProject(projectsList[parseInt(id)-1])
-        fetchProject(id, setProject, setHandler)
-        /*if(projectsList.length > 0){
+        //fetchProject(id, setProject, setHandler)
+        if(projectsList.length > 0){
+            console.log(projectsList.filter(item => item.id === parseInt(id)));
             setProject(projectsList.filter(item => item.id === parseInt(id)));
             setHandler(true);
-        }*/
+        }
     }, [id]);
 
     return(
@@ -30,16 +32,16 @@ export default function ProjectDetail(){
             <Link to='/'><HiOutlineArrowLeft className='backpage'/></Link>
             { handler ? 
                 <>
-                    <h1>{project.name}</h1>
+                    <h1>{project[0].name}</h1>
                     <article>
                         <div className='img-cont'>
-                            <a href={project.route} target='_blank' rel="noreferrer">{project.gif ? <img src={project.gif} alt="project"/> : <img src={project.img} alt="project" />}</a>
+                            <a href={project.route} target='_blank' rel="noreferrer">{project[0].gif ? <img src={project[0].gif} alt="project"/> : <img src={project[0].img} alt="project" />}</a>
                         </div>
                         <div className='detail-descrip'>
-                            <p>{english? project.description : project.descripcion}</p>
+                            <p>{english? project[0].description : project[0].descripcion}</p>
                             <div>
-                                {project.repo && <a href={project.repo} target='_blank' rel="noreferrer"><AiFillGithub id='github-icon'/></a>}
-                                <a href={project.route} target='_blank' rel="noreferrer"><AiOutlineLink/></a>
+                                {project[0].repo && <a href={project[0].repo} target='_blank' rel="noreferrer"><AiFillGithub id='github-icon'/></a>}
+                                <a href={project[0].route} target='_blank' rel="noreferrer"><AiOutlineLink/></a>
                             </div>
 
                         </div>
