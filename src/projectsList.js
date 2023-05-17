@@ -6,8 +6,8 @@ export const projectsList = [
         tech:{
             responsive: true,
             auth: false,
-            db: false,
-            ls: false,
+            db: true,
+            ls: true,
             api: true,
             redux: false,
             mongoDB: true,
@@ -20,7 +20,7 @@ export const projectsList = [
         img: './img/responsive/famox.png',
         portada: './img/portada/famox.png',
         gif: '../gif/famoxPrueba2.gif',
-        route: 'http://www.famox.com.ar/',
+        route: 'https://www.famox.com.ar/',
         descripcion: 'Ecommerce diseñado para la empresa Famox SA, con base de datos en Mongo y una api rest para el back; y para el front una app en React.',
         description: 'Ecommerce designed for a small businnes, Famox SA. It has a mongoDB database and a rest api for the backend, and for frontend an app in React.'
     
