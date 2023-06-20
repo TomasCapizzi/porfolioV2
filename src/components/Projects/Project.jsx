@@ -23,7 +23,7 @@ export default function Project({item, parameter}){
         {
             id <= parameter ?
             <article className='project' id={'item' + item.id}>
-                    <a href={item.route}><img src={size>=740 && item.portada? item.img : item.portada} alt="project"/></a>
+                    <a href={item.route} target='_blank' rel="noreferrer"><img src={size>=740 && item.portada? item.img : item.portada} alt="project"/></a>
                     <div className='view-hover'>
                         <Svg/>
                         <div className='view-descrip'>

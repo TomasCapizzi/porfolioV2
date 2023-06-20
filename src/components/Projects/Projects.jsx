@@ -23,6 +23,7 @@ export default function Projects(){
 
     useEffect(()=>{
         getProyects()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
 

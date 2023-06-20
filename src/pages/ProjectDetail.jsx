@@ -6,15 +6,17 @@ import { LanguageContext } from '../context//LanguageContext';
 import { Link } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 import { projectsList } from '../projectsList';
-import useFetchProjectById from '../hooks/useFetchProjectById';
 import { useParams } from 'react-router';
+
+//import useFetchProjectById from '../hooks/useFetchProjectById';
+
 
 export default function ProjectDetail(){
     const {english} = useContext(LanguageContext)
     const{id} = useParams();
     const [project, setProject] = useState();
     const [handler, setHandler] = useState(false);
-    const {fetchProject} = useFetchProjectById()
+    //const {fetchProject} = useFetchProjectById()
 
 
     useEffect(()=>{

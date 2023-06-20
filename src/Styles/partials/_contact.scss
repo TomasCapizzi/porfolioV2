@@ -35,7 +35,23 @@
 
         }
     }
+
 }
+.on{
+    animation: intersection .7s ease-in-out;
+}
+.off{
+    opacity: 0;
+}
+@keyframes intersection {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @media (max-width: 375px){
     .contact{
         display: flex;

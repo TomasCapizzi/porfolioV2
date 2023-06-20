@@ -15,7 +15,7 @@ export const projectsList = [
             aws: true,
             mern: true
         },
-        date: 'July 2022',
+        date: 'August 2022',
         repo:'https://github.com/TomasCapizzi/Famox',
         img: './img/responsive/famox.png',
         portada: './img/portada/famox.png',
@@ -77,16 +77,17 @@ export const projectsList = [
             db: false,
             ls: true,
             api: true,
-            customHook: false
+            customHook: false,
+            typescript: true
         },
         date: 'September 2021',
         repo:'https://github.com/TomasCapizzi/recipe-app',
         img: './img/responsive/recipes.png',
         portada: './img/portada/recipes.png',
         gif: '../gif/recipe-app2.gif',
-        route: 'https://recipe-app-000.netlify.app/',
-        descripcion: 'Este proyecto fue llevado a cabo mediante el uso de la API TheMealDB, la cual brinca una cierta cantidad de recetas y permite llevar a cabo varias acciones. En este caso hice una recetario donde podes guardar tus comidas favoritas usando LocalStorage, se puede filtrar por categorias y tambien realizar búsquedas. Las tecnologías utilizadas para realizar esto fueron:HTML - SASS - JS - REACT',
-        description: 'This project was carried out through the use of the TheMeal DB API, which has different food recipes and allows various actions to be carried out. In this case I made a recipe book where you can store your favorite recipes by using LocalStorage, you can also filter by categories and perform a search. The technologies used for this project were: HTML - SASS - JS - REACT'
+        route: 'https://recipeapp-9e770.web.app/',
+        descripcion: 'Este proyecto fue llevado a cabo mediante el uso de la API TheMealDB, la cual brinda una cierta cantidad de recetas y permite llevar a cabo varias acciones. En este caso hice una recetario donde podes guardar tus comidas favoritas usando LocalStorage, se puede filtrar por categorias y tambien realizar búsquedas. Las tecnologías utilizadas para realizar esto fueron:HTML - SASS - Typescript - REACT',
+        description: 'This project was carried out through the use of the TheMeal DB API, which has different food recipes and allows various actions to be carried out. In this case I made a recipe book where you can store your favorite recipes by using LocalStorage, you can also filter by categories and perform a search. The technologies used for this project were: HTML - SASS - Typescript - REACT'
     },{
         id:5,
         name: 'Chat app',

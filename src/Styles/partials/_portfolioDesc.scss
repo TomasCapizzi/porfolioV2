@@ -78,8 +78,24 @@
             font-size: 22px;
         }
     }
+    .in{
+        animation: intersection2 .5s ease-in-out;
+    }
+    .out{
+        font-size: 0px;
+        width: 50px;
+        justify-content: center;
+    }
 }
 
+@keyframes intersection2 {
+    0%{
+        width: 60px;
+    }
+    100%{
+        width:190px;
+    }
+}
 
 @media (max-width: 375px){
     .portfolio-desc{
