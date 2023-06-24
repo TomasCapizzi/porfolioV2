@@ -199,8 +199,8 @@ export const projectsList = [
         description: 'This Pokedex was made with the PokeApi API. We can obtain each Pokemon character, go from lowest to highest, see the characteristics of each one through a modal; and it is also paged in order to see a specific amount of pokemons per page. It was made with HTML - CSS - JS'
     },{
         id:10,
-        name: 'Memotest',
-        code: 'js',
+        name: 'Color Game',
+        code: 'ts',
         tech:{
             responsive: true,
             auth: false,
@@ -208,16 +208,17 @@ export const projectsList = [
             db: false,
             ls: false,
             api: false,
-            customHook: false
+            customHook: true,
+            typescript: true
         },
-        date: 'May 2021',
-        repo:'https://github.com/TomasCapizzi/memotest',
-        img: './img/responsive/memotest.png',
+        date: 'June 2023',
+        repo:'https://github.com/TomasCapizzi/ColorGame',
+        img: './img/responsive/colorgameres.png',
         portada: '../img/portada/memo.png',
-        gif:'../gif/memotest.gif',
-        route: 'https://tomascapizzi.github.io/memotest/',
-        descripcion:'Una réplica del conocido juego Memotest, el propósito del juego es encontrar el par en la menor cantidad de intentos posibles. Posee 3 tipos de dificultades. Esta hecho con HTML - CSS - JS VANILLA',
-        description: 'A replica of the well-known Memotest game, the purpose of the game is to find the color pair with the fewest possible moves. It has 3 types of difficulties. The project was made with: HTML - CSS - JS VANILLA'       
+        gif:'../gif/colorGame.gif',
+        route: 'https://color-game-jade-beta.vercel.app/',
+        descripcion:'Juego de colores donde debes elegir el que aparece escrito. Esta desarrollado con REACT - TYPESCRIPT',
+        description: 'Color game where you have to choose the one wich is writen on top. It was developed in REACT - TYPESCRIPT'       
     },{
         id:11,
         name: 'Memory Game',
