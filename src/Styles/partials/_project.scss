@@ -26,6 +26,29 @@
         padding: 0;
         transition: ease-in-out 0.3s;
     }
+    .tech-preview{
+        list-style: none;
+        text-align: center;
+        margin: 10px;
+        width: 100%;
+        padding: 0;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            svg{
+                color: $c2;
+                margin-left: -15px;
+            }
+            p{
+                margin-left: 8px;
+                color: $c5;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 @keyframes project{
@@ -100,6 +123,14 @@
                                 fill: $c2;
                             }
                         }
+                    }
+                }
+            }
+            .tech-preview{
+                li{
+                    svg{
+                        color: $c2;
+                        display: flex;
                     }
                 }
             }
@@ -213,6 +244,16 @@
                     }
                 }
             }
+            .tech-preview{
+                li{
+
+                    svg{
+                        color: $c2;
+                        display: flex;
+                    }
+
+                }
+            }
             .btns{
                 display: flex;
                 align-items: center;
@@ -289,6 +330,9 @@
             justify-content: space-between;
             position: relative;
             bottom: 0;
+            p{
+                text-align: center;
+            }
             svg{
                 margin-top: 0;
                 display: none;
@@ -323,6 +367,16 @@
                             }
                         }
                     }
+                }
+            }
+            .tech-preview{
+                li{
+
+                    svg{
+                        color: $c2;
+                        display: flex;
+                    }
+
                 }
             }
             .btns{
