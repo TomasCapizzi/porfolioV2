@@ -1,5 +1,5 @@
 import { FaCss3Alt, FaNodeJs, FaReact, FaSass } from 'react-icons/fa';
-import {SiJavascript, SiTypescript} from 'react-icons/si';
+import {SiCssmodules, SiJavascript, SiTypescript} from 'react-icons/si';
 
 import { AiFillHtml5 } from 'react-icons/ai';
 import {FiDatabase} from 'react-icons/fi'
@@ -19,6 +19,7 @@ function CodeStack() {
             <li><FaReact/><p>React</p></li>
             <li><FiDatabase/><p>SQL</p></li>
             <li><SiTypescript/><p>Typescript</p></li>
+            <li><SiCssmodules/>CSS Modules</li>
         </ul>
   </div>
   )
