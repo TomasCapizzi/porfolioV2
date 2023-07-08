@@ -5,6 +5,7 @@ import {HiOutlineArrowLeft} from 'react-icons/hi'
 import { LanguageContext } from '../context//LanguageContext';
 import { Link } from 'react-router-dom';
 import Spinner from '../components/Spinner';
+import StackProject from '../components/Projects/StackProject';
 import { projectsList } from '../projectsList';
 import { useParams } from 'react-router';
 
@@ -35,7 +36,7 @@ export default function ProjectDetail(){
             { handler ? 
                 <>
                     <h1>{project[0].name}</h1>
-                    <article>
+                    <article className='detail'>
                         <div className='img-cont'>
                             <a href={project.route} target='_blank' rel="noreferrer">{project[0].gif ? <img src={project[0].gif} alt="project"/> : <img src={project[0].img} alt="project" />}</a>
                         </div>
@@ -47,6 +48,10 @@ export default function ProjectDetail(){
                             </div>
 
                         </div>
+                    </article>
+                    <article className='stack-container'>
+                        <h4>Project Stack</h4>
+                        <StackProject project={project} />
                     </article>
                 </> : <Spinner/> }
 
