@@ -1,4 +1,4 @@
-import {SiAmazonaws, SiBulma, SiCssmodules, SiFirebase, SiJavascript, SiMongodb, SiMysql, SiNodedotjs, SiReact, SiRedux, SiSass, SiTypescript} from 'react-icons/si'
+import {SiAmazonaws, SiBulma, SiCssmodules, SiFirebase, SiJavascript, SiMongodb, SiMysql, SiNodedotjs, SiReact, SiRedux, SiSass, SiTailwindcss, SiTypescript} from 'react-icons/si'
 
 import {BiLock} from 'react-icons/bi'
 import {FaDatabase} from 'react-icons/fa6'
@@ -21,6 +21,7 @@ function StackProject({project}) {
         {stack.sql && <li><SiMysql/>SQL</li>}
         {stack.sass && <li><SiSass/>Sass</li>}
         {stack.cssMod && <li><SiCssmodules/>Css Modules</li>}
+        {stack.tailwind && <li><SiTailwindcss/>Tailwind Css</li>}
         {stack.customHook && <li><SiReact/>Custom Hooks</li>}
         {stack.auth && <li><BiLock/>Auth</li>}
         {stack.firebase && <li><SiFirebase/>Firebase</li>}
