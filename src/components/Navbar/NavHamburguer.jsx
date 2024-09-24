@@ -6,14 +6,14 @@ import Language from './Language';
 import { LanguageContext } from '../../context/LanguageContext';
 import Links from './Links';
 
-function NavHamburguer({dropMenu}) {
+function NavHamburguer({dropMenu, menuHambRef}) {
     const {english,setSpanishLanguage, setEnglishLanguage} = useContext(LanguageContext)
   return (
     <nav className='menu-hamb'>
         <div className='nav-container'>
             <a href='/' rel="noreferrer"><FaHome/></a>
             <button onClick={dropMenu}><HiMenuAlt3/></button>
-            <div className='hamb-links' id='menu-hamb'>
+            <div className='hamb-links' ref={menuHambRef}>
                 <Links english={english} />
                 <Language english={english} setEnglishLanguage={setEnglishLanguage} setSpanishLanguage={setSpanishLanguage}/>
             </div>
