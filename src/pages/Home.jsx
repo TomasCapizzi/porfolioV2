@@ -1,3 +1,4 @@
+import Background from '../components/Background';
 import Contact from '../components/Contact/Contact';
 import Description from '../components/Description';
 import PersonalInfo from '../components/PersonalInfo';
@@ -9,8 +10,9 @@ import Stack from '../components/Stack';
 function Home() {  
   return (
     <section className='home'>
+        <Background/>
         <Description />
-        <Stack/>
+{/* <Stack/>*/}
         <Projects/>
         <PersonalInfo/>
         <PortfolioDescription/>
