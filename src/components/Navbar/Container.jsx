@@ -1,17 +1,18 @@
+import React,{useRef} from 'react'
+
 import NavHamburguer from './NavHamburguer'
 import Navbar from './Navbar'
-import React from 'react'
 
 function Container() {
+  const menuHambRef = useRef()
 
     function dropMenu(){        
-        const menuHamb = document.getElementById('menu-hamb')
-        menuHamb.classList.toggle('on')
+      menuHambRef.current.classList.toggle('on')
     }
   return (
     <>
         <Navbar/>
-        <NavHamburguer dropMenu={dropMenu} />
+        <NavHamburguer dropMenu={dropMenu} menuHambRef={menuHambRef} />
     </>
   )
 }
