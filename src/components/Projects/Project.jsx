@@ -23,16 +23,16 @@ export default function Project({item, parameter}){
         {
             id <= parameter ?
             <article className='project' id={'item' + item.id}>
-                    <a href={item.route} target='_blank' rel="noreferrer"><img src={size>=740 && item.portada? item.img : item.portada} alt="project"/></a>
                     <div className='view-hover'>
-                        <Svg/>
                         <div className='view-descrip'>
                             <h5>{item.name}</h5>
-                            {item.date && <p className="date"><VscCalendar/>{item.date}</p>}
+                            <p>{item.description}</p>
+                            {/*item.date && <p className="date"><VscCalendar/>{item.date}</p>*/}
                             <StackPreview item={item} />
                             <Buttons item={item}/>
                         </div>
                     </div>
+                    <a href={item.route} target='_blank' rel="noreferrer" className="img"><img src={size>=740 && item.portada? item.portada : item.img} alt="project"/></a>
             </article>
             : null
         }

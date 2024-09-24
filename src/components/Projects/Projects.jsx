@@ -19,8 +19,6 @@ export default function Projects(){
     function showLessProducts(){
         setParameter(3)
     }
-    
-
     useEffect(()=>{
         getProyects()
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -31,7 +29,6 @@ export default function Projects(){
         <div className='projects'>
             <h3 id='projects'>{english ? 'Projects' : 'Proyectos'}</h3>
                 <div className='projects-container'>
-                    <svg className='svg-first' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#404040" fillOpacity="1" d="M0,128L720,192L1440,192L1440,320L720,320L0,320Z"></path></svg>
                     <article className='container-parent'>
                         {
                             projects ? 
@@ -57,7 +54,6 @@ export default function Projects(){
                             </div> 
                     : null
                     }
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#404040" fillOpacity="1" d="M0,128L720,192L1440,192L1440,0L720,0L0,0Z"></path></svg>
                 </div>
         </div>
     )
