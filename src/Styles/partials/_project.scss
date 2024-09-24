@@ -1,51 +1,119 @@
 @import './data';
 .project{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     margin:10px;
+    margin-bottom: 80px;
     padding: 0;
-    height: 450px;
+    height: auto;
     position: relative;
-    a{
-        width: 100%;
+    .img{
+        width: 45%;
         transition: ease-in-out 0.3s;
         filter: blur(0.5px);
         img{
             width: 100%;
             opacity: 1; 
-            height: 450px;
+            object-fit: fill;
+            height: auto;
             box-shadow: 0 6px 7px rgba(0,0,0,0.5);
             border-radius: 5px;
-            filter: grayscale(90%);
+            filter: grayscale(0%);
         }
     }
     .view-hover{
-        display: none;
-        padding: 0;
-        transition: ease-in-out 0.3s;
-    }
-    .tech-preview{
-        list-style: none;
-        text-align: center;
-        margin: 10px;
-        width: 100%;
-        padding: 0;
-        li{
+        display: flex;
+        width: 50%;
+        position: relative;
+        bottom: 0;
+        .view-descrip{
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            svg{
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+            background-color: transparent;
+            h5{
+                font-size: 18px;
                 color: $c2;
-                margin-left: -15px;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 15px;
             }
             p{
-                margin-left: 8px;
-                color: $c5;
-                text-align: center;
                 font-size: 14px;
+            }
+            ul{
+                display: flex;
+
+                list-style: none;
+                padding: 0;
+                margin: 0 0px 10px 8px;
+                width: 100%;
+                li{
+                    margin-right: 5px;
+                    display: flex;
+                    align-items: center;
+                    background-color: $c3;
+                    border-radius: 5px;
+                    padding: 3px;
+                    p{
+                        font-size: 12px;
+                        margin: 3px 5px;
+                    }
+                    svg{
+                        font-size: 18px;
+                        path{
+                            fill: $c2;
+                        }
+                    }
+                }
+            }
+        }
+        .tech-preview{
+            li{
+                svg{
+                    color: $c2;
+                    display: flex;
+                }
+            }
+        }
+        .btns{
+            display: flex;
+            align-items: center;
+            width: auto;
+            margin: 10px 0;
+            a{
+                text-align: center;
+                button{
+                    width: 80%;
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    transition: .3s ease all;
+                    svg{
+                        font-size: 22px;
+                        color: $c2;
+                        display: inline;
+                        path{
+                            fill: $c2;
+                            stroke:transparent;
+                            transition: .3s ease all;
+                        }
+                    }
+                }
+                button:hover{
+                    color: $c1;
+                }
+            }
+            a:hover{
+                svg{
+                    path{
+                        fill: $c5;
+                    }
+                }
             }
         }
     }
@@ -59,6 +127,7 @@
         opacity: 0;
     }
 }
+/*
 @media (max-width: 375px){
     .project{
         display: flex;
@@ -506,3 +575,4 @@
         }
     }
 }
+*/

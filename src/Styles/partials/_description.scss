@@ -2,13 +2,16 @@
 .description{
     display: flex;
     justify-content: space-around;
-    width: 1024px;
+    max-width: 1024px;
     margin-top: 70px;
+    margin-bottom: 100px;
+    position: relative;
     animation: start 0.9s ease-in-out;
     img{
-        width: 270px;
+        width: 220px;
         border-radius: 8px;
         transition: .3s ease-in-out all;
+        margin-right: 15px;
         filter: grayscale(50%);
     }
     img:hover{
@@ -27,22 +30,22 @@
             color: $c5;
         }
         h2{
-            font-size: 30px;
-            color: $c2;
+            font-size: 20px;
+            color: $c4;
             margin: 0;
         }
         ul{
             display: flex;
             list-style: none;
-            width: 30%;
+            width: 100%;
             justify-content: space-around;
             padding: 0;
             margin: 0;
             li{
-                a{
+                svg{
                     color: $c2;
                     text-decoration: none;
-                    font-size: 35px;
+                    font-size: 28px;
                     transition: .3s ease-in all;
                     cursor: pointer;
                 }
@@ -51,8 +54,54 @@
                 }
             }
         }
+        .description-btns{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            button{
+                width: 120px;
+                border: 1px solid $c2;
+                font-size: 16px;
+                border-radius: 5px;
+                padding: 5px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+            }
+            button:hover{
+                transform: scale(0.95);
+            }
+            .btn-contact{
+                background-color: $c2;
+                
+            }
+            .btn-cv{
+                background-color: transparent;
+                color: $c2;
+                display: flex;
+                justify-content: space-around;
+                svg{
+                    font-size: 20px;
+                }
+            }
+        }
     }
-
+    .social{
+        position: absolute;
+        right: -280px;
+        list-style: none;
+        li{
+            a{
+                svg{
+                    font-size: 28px;
+                    color: $c5;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+        svg:hover{
+            color: $c2;
+        }
+    }
 }
 //Animations
 

@@ -2,52 +2,61 @@
 .menu{
     display: flex;
     width: 100%;
-    background-color: $c4;
+    background-color: $c3;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     .nav-container{
         display: flex;
-        justify-content: space-around;
-        width: 80%;
-    }
-    ul{
-        display: flex;
-        list-style: none;
-        width: 50%;
-        li{
-            margin-right: 40px;
-            color: $c5;
-            font-weight: bold;
-            cursor: pointer;
+        justify-content: center;
+        width: 100%;
+        ul{
+            display: flex;
+            list-style: none;
+            width: auto;
+            a{
+                text-decoration: none;
+                li{
+                    margin-right: 40px;
+                    color: $c4;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                a:nth-child(1){
+                    li{
+                        font-size: 1.1rem;
+                    }
+                }
+                li:hover{
+                    color: $c2;
+                    transition: ease-in 0.15s;
+                }
+                a:nth-child(1) li:hover{
+                    animation-name: icons;
+                    animation-duration: 0.3s;
+                }
+            }
+            
         }
-        a:nth-child(1){
+        .languages{
+            justify-content: flex-end;
             li{
-                font-size: 1.1rem;
+                margin-right: 15px;
+                color: $c4;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .englishOn{
+                color: $c2;
+            }
+            .englishOff{
+                color: $c1;
             }
         }
-        li:hover{
-            color: $c3;
-            transition: ease-in 0.15s;
-        }
-        a:nth-child(1) li:hover{
-            animation-name: icons;
-            animation-duration: 0.3s;
-        }
-        a{
-            text-decoration: none;
-        }
     }
-    .languages{
-        justify-content: flex-end;
-        li{
-            margin-right: 15px;
-        }
-        .englishOn{
-            color: $c5;
-        }
-        .englishOff{
-            color: $c3;
-        }
-    }
+
+
 }
 .menu-hamb{
     display: none;
@@ -70,7 +79,7 @@
         transform: rotate(0deg);
     }
 }
-
+/*
 @media only screen and (max-width: 680px){
     .menu{
         display: none;
@@ -292,3 +301,4 @@
         }
     }
 }
+*/

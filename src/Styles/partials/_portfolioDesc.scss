@@ -6,7 +6,7 @@
     flex-direction: column;
     margin-top: 50px;
     p{
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
     .portfolio-stack{
@@ -25,7 +25,7 @@
                 width: 100%;
                 justify-content: center;
                 p{
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 svg{
                     color: $c2;
@@ -43,7 +43,7 @@
                     justify-content: flex-start;
                     color: $c4;
                     p{
-                        font-size: 16px;
+                        font-size: 15px;
                         margin: 0;
                         color: $c4;
                     }
@@ -52,7 +52,7 @@
                         align-items: flex-end;
                         li{
                             width: 100%;
-                            font-size: 14px;
+                            font-size: 15px;
                         }
                     }
                 }
@@ -62,7 +62,7 @@
     }
 
     .portfolio-git{
-        background-color: $c2;
+        background-color: $c5;
         width: 190px;
         padding: 5px;
         font-size: 14px;
