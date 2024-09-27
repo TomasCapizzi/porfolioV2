@@ -11,8 +11,11 @@ export default function Contact(){
     return (
         <div className={isIntersecting? 'contact on':'contact off'} ref={elementRef}>
             <h3 id='contact'>{english  ? 'Contact' : 'Contacto'}</h3>
-            {english ? <p>If my profile adjusts to what you're looking for, or some of my projects are of your interest, i'm open to feedback and profesional proposals. ¡Don't doubt on contacting me!</p>
-            : <p>Si mi perfil se ajusta a lo que estas buscando, o algunos de mis proyectos son de tu interés, no dudes en contactarte conmigo o darme feedback acerca de lo que te parecio.</p>
+            {english ? <p>If you're looking for a frontend developer passionate about creating modern, efficient, and detail-oriented web interfaces, I'm here to help! I have experience in HTML, CSS, JavaScript, React, and other key frontend technologies, and I'm always looking for new challenges to improve my skills and bring value to every project. 
+            If you have any questions, collaboration proposals, or just want to know more about my experience, don't hesitate to get in touch. I'd be happy to chat with you and explore how I can contribute to your projects.</p>
+            : <p>Si estás buscando un desarrollador frontend apasionado por crear interfaces web modernas, eficientes y con gran atención al detalle, ¡estoy aquí para ayudarte! Tengo experiencia en HTML, CSS, JavaScript, React y otras tecnologías clave del frontend, y siempre estoy en busca de nuevos retos para mejorar mis habilidades y aportar valor a cada proyecto.
+
+            Si tienes alguna pregunta, propuesta de colaboración o simplemente quieres saber más sobre mi experiencia, no dudes en ponerte en contacto conmigo. Estaré encantado de conversar contigo y explorar cómo puedo contribuir a tus proyectos.</p>
             }
             <ContactIcons/>
         </div>

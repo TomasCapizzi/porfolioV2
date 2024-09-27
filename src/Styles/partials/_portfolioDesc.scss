@@ -6,7 +6,7 @@
     flex-direction: column;
     margin-top: 50px;
     p{
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
     }
     .portfolio-stack{
@@ -63,9 +63,9 @@
 
     .portfolio-git{
         background-color: $c5;
-        width: 190px;
+        width: 150px;
         padding: 5px;
-        font-size: 14px;
+        font-size: 12px;
         border-radius: 10px;
         cursor: pointer;
         color: $c1;
