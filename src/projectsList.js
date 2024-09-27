@@ -57,7 +57,7 @@ export const projectsList = [
         date: 'August 2024',
         repo:'https://github.com/TomasCapizzi/Inmedar',
         img: './img/responsive/famox.png',
-        portada: './img/portada/famox.png',
+        portada: './img/portada/inmedar.png',
         gif: '../gif/famoxPrueba2.gif',
         route: 'http://www.inmedar.com/',
         descripcion: 'Sitio web empresarial para la firma Inmedar. Desarrollado con Typescript y React, estilos en Sass.',
